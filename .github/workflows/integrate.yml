@@ -6,7 +6,7 @@ on:
   pull_request:
 
 jobs:
-  go-build:
+  go:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -16,19 +16,10 @@ jobs:
       - run: go mod download
       - run: go build ./...
       - run: go vet ./...
-
-  go-test:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-go@v5
-        with:
-          go-version-file: go.mod
-      - run: go mod download
       - run: go test ./... -race -count=1
 
-  mcp-build:
-    needs: [go-build, go-test]
+  mcp:
+    needs: go
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -41,22 +32,9 @@ jobs:
       - run: go mod download
       - run: go build ./...
       - run: go vet ./...
-
-  mcp-test:
-    needs: [go-build, go-test]
-    runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: mcp
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-go@v5
-        with:
-          go-version-file: mcp/go.mod
-      - run: go mod download
       - run: go test ./... -race -count=1
 
-  ts-build:
+  ts:
     runs-on: ubuntu-latest
     defaults:
       run:
