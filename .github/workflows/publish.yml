@@ -33,5 +33,5 @@ jobs:
       - run: pnpm run typecheck
       - run: pnpm test
       - run: pnpm run build
-      - name: publish to npm
-        run: npm publish --access public --provenance
+      - name: stage publish to npm
+        run: npm stage publish --access public --provenance
