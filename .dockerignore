@@ -1,0 +1,17 @@
+.git
+.gitignore
+.env
+.env.*
+!.env.example
+Dockerfile
+.dockerignore
+.forgejo
+.github
+README.md
+LICENSE
+ports
+bin
+dist
+*.log
+coverage.txt
+coverage.html
