@@ -1,11 +1,11 @@
 {
-  "name": "namegen",
+  "name": "character-namegen",
   "version": "0.1.0",
-  "description": "Fantasy/RPG name generator.",
+  "description": "Fantasy/RPG name generator including capable IRL cultural name generation.",
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wishmatic/namegen.git",
+    "url": "git+https://github.com/wishmatic/character-namegen.git",
     "directory": "ports/ts"
   },
   "type": "module",

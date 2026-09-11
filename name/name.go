@@ -1,8 +1,8 @@
 package name
 
 import (
-	"github.com/wishmatic/namegen/gender"
-	"github.com/wishmatic/namegen/utils"
+	"github.com/wishmatic/character-namegen/gender"
+	"github.com/wishmatic/character-namegen/utils"
 )
 
 type Name struct {

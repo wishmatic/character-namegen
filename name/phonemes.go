@@ -4,8 +4,8 @@ import (
 	"strings"
 	"unicode"
 
-	"github.com/wishmatic/namegen/gender"
-	"github.com/wishmatic/namegen/utils"
+	"github.com/wishmatic/character-namegen/gender"
+	"github.com/wishmatic/character-namegen/utils"
 )
 
 // phonemeVowels is the set of vowel letters used by the phoneme sets.

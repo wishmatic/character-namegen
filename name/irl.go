@@ -4,8 +4,8 @@ import (
 	_ "embed"
 	"strings"
 
-	"github.com/wishmatic/namegen/gender"
-	"github.com/wishmatic/namegen/utils"
+	"github.com/wishmatic/character-namegen/gender"
+	"github.com/wishmatic/character-namegen/utils"
 )
 
 // lines splits raw newline-separated text into trimmed, non-empty lines.

@@ -1,3 +1,3 @@
-module github.com/wishmatic/namegen
+module github.com/wishmatic/character-namegen
 
 go 1.27
