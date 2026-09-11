@@ -1,8 +1,6 @@
 # `character-namegen` NPM Package
 
-RPG name generator with a decently good IRL name generator. This is the TypeScript package — the Go library, MCP
-server, and data-generation scripts live in the
-[main repository](https://github.com/wishmatic/character-namegen).
+RPG name generator with a decently good (in our opinion) IRL name generator.
 
 ## Install
 
@@ -18,10 +16,12 @@ bun add character-namegen
 
 ## Usage
 
-```ts
-import { generate, Male } from "character-namegen";
+For example:
 
-const generated = generate(Male);
+```ts
+import { generate, Female } from "character-namegen";
+
+const generated = generate(Female);
 // => { givenName, surname, gender }
 ```
 
