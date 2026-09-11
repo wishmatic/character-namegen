@@ -49,18 +49,7 @@ n := name.Generate(gender.Male, nil)
 
 ## TypeScript
 
-### `generate`
-
-The core name generator.
-
-```ts
-import { generate, Male } from "character-namegen";
-
-const name = generate(Male);
-// => { givenName, surname, gender }
-```
-
-`generate(gender?, culture?)` mirrors the Go API: an empty gender or a `null` culture is resolved at random.
+The package README (what npm shows) is [`ports/ts/README.md`](ports/ts/README.md).
 
 ## Scripts
 
