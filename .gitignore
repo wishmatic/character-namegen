@@ -4,8 +4,11 @@
 *.so
 *.dylib
 
+node_modules/
+
 *.test
 
+dist
 *.out
 coverage.*
 *.coverprofile
