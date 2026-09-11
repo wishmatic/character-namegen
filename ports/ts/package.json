@@ -1,17 +1,36 @@
 {
+  "name": "namegen",
+  "version": "0.1.0",
+  "description": "Fantasy/RPG name generator.",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wishmatic/namegen.git",
+    "directory": "ports/ts"
+  },
   "type": "module",
   "sideEffects": false,
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "exports": {
-    ".": "./src/index.ts"
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
   },
+  "files": [
+    "dist"
+  ],
   "scripts": {
+    "generate": "node scripts/generate-data.mjs",
+    "prepare": "pnpm run generate",
+    "build": "pnpm run generate && tsc -p tsconfig.build.json",
     "typecheck": "tsc -p tsconfig.json",
     "test": "vitest run"
   },
   "devDependencies": {
     "@types/node": "^24.0.0",
     "typescript": "^5.7.0",
-    "vite": "^6.0.0",
     "vitest": "^3.0.0"
   }
 }
