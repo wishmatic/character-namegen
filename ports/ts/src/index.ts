@@ -1,6 +1,6 @@
-export { generate } from "./name";
-export type { Name } from "./types";
-export { Female, Male, NonBinary, type Gender } from "./gender";
+export { generate } from "./name.js";
+export type { Name } from "./types.js";
+export { Female, Male, NonBinary, type Gender } from "./gender.js";
 export {
   IRL_CULTURES,
   PHONEME_CULTURES,
@@ -8,4 +8,4 @@ export {
   type Culture,
   type IRLCulture,
   type PhonemeCulture,
-} from "./culture";
+} from "./culture.js";

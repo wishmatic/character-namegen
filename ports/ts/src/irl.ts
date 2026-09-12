@@ -1,8 +1,8 @@
-import { irlData, type CultureData } from "./data";
-import { Female, Male, type Gender } from "./gender";
-import type { IRLCulture } from "./culture";
-import { pick } from "./random";
-import type { Name } from "./types";
+import { irlData, type CultureData } from "./data.js";
+import { Female, Male, type Gender } from "./gender.js";
+import type { IRLCulture } from "./culture.js";
+import { pick } from "./random.js";
+import type { Name } from "./types.js";
 
 export function generateIRLName(culture: IRLCulture, gender: Gender): Name {
   const data = determineNameData(culture);

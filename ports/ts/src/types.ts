@@ -1,4 +1,4 @@
-import type { Gender } from "./gender";
+import type { Gender } from "./gender.js";
 
 export interface Name {
   givenName: string;

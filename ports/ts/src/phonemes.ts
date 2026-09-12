@@ -1,7 +1,7 @@
-import { Female, Male, type Gender } from "./gender";
-import type { PhonemeCulture } from "./culture";
-import { pick } from "./random";
-import type { Name } from "./types";
+import { Female, Male, type Gender } from "./gender.js";
+import type { PhonemeCulture } from "./culture.js";
+import { pick } from "./random.js";
+import type { Name } from "./types.js";
 
 interface PhonemeSet {
   onsets: string[];

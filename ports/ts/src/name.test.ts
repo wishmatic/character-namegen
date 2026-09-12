@@ -8,7 +8,7 @@ import {
   PHONEME_CULTURES,
   generate,
   type Gender,
-} from "./index";
+} from "./index.js";
 
 const VOWELS = new Set(["a", "e", "i", "o", "u"]);
 

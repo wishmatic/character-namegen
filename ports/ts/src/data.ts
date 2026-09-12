@@ -4,4 +4,4 @@ export interface CultureData {
   surnames: string[];
 }
 
-export { IRL_DATA as irlData } from "./data.generated";
+export { IRL_DATA as irlData } from "./data.generated.js";

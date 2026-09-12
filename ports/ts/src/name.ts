@@ -1,14 +1,14 @@
-import { Female, Male, type Gender } from "./gender";
-import { generateIRLName } from "./irl";
-import { generateRandomPhonemeName } from "./phonemes";
-import { pick } from "./random";
+import { Female, Male, type Gender } from "./gender.js";
+import { generateIRLName } from "./irl.js";
+import { generateRandomPhonemeName } from "./phonemes.js";
+import { pick } from "./random.js";
 import {
   PHONEME_CULTURES,
   SUPPORTED_CULTURES,
   type Culture,
   type PhonemeCulture,
-} from "./culture";
-import type { Name } from "./types";
+} from "./culture.js";
+import type { Name } from "./types.js";
 
 const PHONEME_CULTURE_SET: ReadonlySet<string> = new Set(PHONEME_CULTURES);
 
