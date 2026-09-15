@@ -9,7 +9,7 @@ require (
 	github.com/google/jsonschema-go v0.4.3
 	github.com/joho/godotenv v1.5.1
 	github.com/modelcontextprotocol/go-sdk v1.7.0
-	github.com/wishmatic/character-namegen v0.0.0
+	github.com/wishmatic/character-namegen v0.5.0
 	go.uber.org/zap v1.28.0
 )
 
